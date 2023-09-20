@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html{
+  font-family: 'Nunito';
+  font-size: 12px;
+}
+
+section{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: crimson;
+}
+.container{
+  width: 100%;
+  height: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.brand{
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+  margin-bottom: 30px;
+}
+form{
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: rgb(223, 223, 223);
+}
+input{
+  width: 90%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background-color: rgb(223, 223, 223);
+  display: inline-block;
+}
+
+.search-result{
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+.item{
+  width: 100%;
+  border-radius: 8px;
+  background-color: rgb(221, 166, 166);
+  padding: 15px;
+  overflow: hidden;
+}
+.item img{
+  width: 100%;
+  height: 500px;
+  border-radius: 10px ;
+  background-size: cover;
+}
+.flex-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+
+#searchInput{
+  color: crimson;
+  display: block;
+  margin-top: 10px ;
+  font-size: 1.4rem;
+  letter-spacing: .05rem;
+  line-height: 2rem;
+} 
+.container.initial.brand{
+  font-size: 7rem;
+
+}
+#searchButton{
+  /* position: absolute;
+  right: 40px;
+  top: 25px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+ 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; */
+
+ 
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 15px;
+    border-width: 0 0 4px;
+    /* box-sizing: border-box; */
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+
+.container.initial form{
+  max-width: 800px;
+
+}
+.container.initial form input{
+  padding: 20px;
+  font-size: 3rem;
+}
