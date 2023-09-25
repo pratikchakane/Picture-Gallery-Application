@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 img{
   width: 100%;
@@ -12,6 +13,14 @@ img{
 html{
   font-family: 'Nunito';
   font-size: 12px;
+}
+#navbar{
+background-color: crimson;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-top: 10px 20px;
+
 }
 
 section{
@@ -136,7 +145,39 @@ input{
     white-space: nowrap;
     width: 100%;
 }
-
+#backButton{
+ 
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 15px;
+  border-width: 0 0 4px;
+  /* box-sizing: border-box; */
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 20%;
+  left: 100;
+  
+ 
+}
 
 .container.initial form{
   max-width: 800px;

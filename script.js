@@ -3,6 +3,14 @@ const searchInput = document.getElementById('searchInput');
 const container = document.querySelector('.container');
 const APP_KEY = '9-rmmAKfSWdU8rK9XXGHHrMPh2ondbbnsMOXi5V4xOY'; // Replace with your API key
 
+const backButton = document.getElementById('backButton');
+
+backButton.addEventListener('click', () => {
+ window.location.href = 'index.html'; 
+   clearSearchResults();
+});
+
+
 searchForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const searchQuery = searchInput.value;
@@ -22,6 +30,7 @@ async function fetchAPI(query) {
 }
 
 function generateHTML(results) {
+
     container.innerHTML = ''; 
     results.forEach(result => {
         const item = document.createElement('div');
